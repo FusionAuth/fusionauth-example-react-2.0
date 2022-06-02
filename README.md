@@ -74,7 +74,8 @@ If you want to use this example app as a jumping-off point for your own FusionAu
 - remove, replace, or add React components in `/client/app/components/` and update references in `/client/app/index.js`
 - remove, replace, or add styles in `/client/app/styles/` and update references in `/client/app/index.css`
 - remove, replace, or add routes in `/server/routes/` and update references in `/server/index.js`
+- add some CSS to make it look good.
 
 ## Contributing
 
-To contribute, please open a PR on this repository. 
+To contribute, please open a PR on this repository.
