@@ -16,7 +16,7 @@ This application will use an OAuth Authorization Code workflow to log users in a
 
 2. Clone this repository.
 
-3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)). For the quickest results, use the Kickstart file in the client directory of this repository. Learn how to use Kickstart [here](https://fusionauth.io/docs/v1/tech/installation-guide/kickstart). If you use the Kickstart file, your configuration should now be complete. If you configured manually, you will need to copy your application data to `client/src/config.js`.
+3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)).
 
 4. Make sure FusionAuth is running, then install dependencies and start the app. The React app should automatically open in your browser at [localhost:3000](http://localhost:3000).
 
@@ -30,8 +30,6 @@ This application will use an OAuth Authorization Code workflow to log users in a
 	npm install
 	npm start
 	```
-
-There is extensive documentation about installing and using this Reactexample app in [this tutorial](https://fusionauth.io/blog/2021/11/11/how-to-authenticate-your-react-app).
 
 ## Understanding the Example
 
