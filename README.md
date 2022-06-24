@@ -12,11 +12,11 @@ This application will use an OAuth Authorization Code workflow to log users in a
 
 	- [NodeJS](https://nodejs.org/en/download/)
 	- [MySQL](https://fusionauth.io/docs/v1/tech/installation-guide/database#install-mysql) or [Postgres](https://fusionauth.io/docs/v1/tech/installation-guide/database#install-postgresql)
-	- [FusionAuth](https://fusionauth.io/download)
+	- [FusionAuth](https://fusionauth.io/docs/v1/tech/installation-guide/fast-path#fast-path-install)
 
-2. Clone this repository.
+2. Load some test data using [Kickstart](https://fusionauth.io/docs/v1/tech/installation-guide/kickstart)
 
-3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)). Copy the client Id, client secret, and application Id values from the FusionAuth admin panel to `client/src/config.js`.
+3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)). If you didn't use Kickstart, you may need to copy the client Id, client secret, and application Id values from the FusionAuth admin panel to `client/src/config.js`.
 
 4. Make sure FusionAuth is running, then install dependencies and start the app. The React app should automatically open in your browser at [localhost:3000](http://localhost:3000).
 
