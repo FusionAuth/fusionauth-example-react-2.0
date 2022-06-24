@@ -16,6 +16,9 @@
       "url": "/api/application/85a03867-dccf-4882-adde-1a79aeec50df",
       "body": {
         "application": {
+  	  "oauthConfiguration": {
+            "clientSecret" : "6HvlAe28V4PL9OEKJ0VlZ6ZsEAluEsZHVFYKuoLAr1U"
+          },
           "name": "Pied Piper",
           "roles": [
             {
