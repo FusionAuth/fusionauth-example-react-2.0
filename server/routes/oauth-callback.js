@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
       method: 'POST',
       uri: `http://localhost:${config.fusionAuthPort}/oauth2/token`,
       form: {
-        'client_id': config.clientID,
+        'client_id': config.clientId,
         'client_secret': config.clientSecret,
         'code': req.query.code,
         'grant_type': 'authorization_code',

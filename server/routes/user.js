@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
         method: 'POST',
         uri: `http://localhost:${config.fusionAuthPort}/oauth2/introspect`,
         form: {
-          'client_id': config.clientID,
+          'client_id': config.clientId,
           'token': req.session.token
         }
       },
@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
             // GET request to /registration endpoint
             {
               method: 'GET',
-              uri: `http://localhost:${config.fusionAuthPort}/api/user/registration/${introspectResponse.sub}/${config.applicationID}`,
+              uri: `http://localhost:${config.fusionAuthPort}/api/user/registration/${introspectResponse.sub}/${config.applicationId}`,
               json: true,
               headers: {
                 'Authorization': config.apiKey
