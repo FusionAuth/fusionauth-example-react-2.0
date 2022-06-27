@@ -1,5 +1,7 @@
 const config = {
   // OAuth info (copied from the FusionAuth admin panel)
+  // These values are set to match the values in the Kickstart file, if you
+  // aren't using that application you WILL have to change these values
   clientId: '85a03867-dccf-4882-adde-1a79aeec50df',
   clientSecret: '6HvlAe28V4PL9OEKJ0VlZ6ZsEAluEsZHVFYKuoLAr1U',
   redirectURI: 'http://localhost:3001/oauth-callback',
