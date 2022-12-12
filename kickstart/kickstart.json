@@ -33,6 +33,26 @@
     },
     {
       "method": "POST",
+      "url": "/api/application/48f671cc-1627-41b5-aed1-260b80a9f742",
+      "body": {
+        "application": {
+          "name": "React Auth",
+          "oauthConfiguration": {
+            "authorizedRedirectURLs": [
+              "http://localhost:3001/oauth-callback"
+            ],
+            "logoutURL": "http://localhost:3000/logout",
+            "clientSecret": "pqQj3uOj7q7BLe0ImvgSxCvKUTuczAth1vjAmkntve8",
+            "enabledGrants": [
+              "authorization_code",
+              "refresh_token"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
       "url": "/api/email/template/0502df1e-4010-4b43-b571-d423fce978b2",
       "body": {
         "emailTemplate": {
@@ -150,6 +170,43 @@
           "roles": [
             "admin"
           ]
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "url": "/api/user/registration/00000000-0000-0000-0000-000000000001",
+      "body": {
+        "registration": {
+          "applicationId": "48f671cc-1627-41b5-aed1-260b80a9f742"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "url": "/api/user/registration/00000000-0000-0000-0000-000000000020",
+      "body": {
+        "user": {
+          "birthDate": "1960-05-02",
+          "email": "test@fusionauth.io",
+          "firstName": "Test",
+          "lastName": "User",
+          "password": "password"
+        },
+        "registration": {
+          "applicationId": "#{FUSIONAUTH_APPLICATION_ID}",
+          "roles": [
+            "admin"
+          ]
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "url": "/api/user/registration/00000000-0000-0000-0000-000000000020",
+      "body": {
+        "registration": {
+          "applicationId": "48f671cc-1627-41b5-aed1-260b80a9f742"
         }
       }
     },
