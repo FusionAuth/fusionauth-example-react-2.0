@@ -12,11 +12,11 @@ This application will use an OAuth Authorization Code workflow to log users in a
 
 	- [NodeJS](https://nodejs.org/en/download/)
 	- [MySQL](https://fusionauth.io/docs/v1/tech/installation-guide/database#install-mysql) or [Postgres](https://fusionauth.io/docs/v1/tech/installation-guide/database#install-postgresql)
-	- [FusionAuth](https://fusionauth.io/download)
+	- [FusionAuth](https://fusionauth.io/docs/v1/tech/installation-guide/fast-path#fast-path-install)
 
-2. Clone this repository.
+2. Load some test data using [Kickstart](https://fusionauth.io/docs/v1/tech/installation-guide/kickstart). Use the data file in `kickstart/kickstart.json`.
 
-3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)).
+3. Configure your app in the FusionAuth admin panel (default [localhost:9011](localhost:9011)). If you didn't use Kickstart or you see an error message about an invalid client Id, you may need to copy your client Id, client secret, and application Id values from the FusionAuth admin panel to `client/src/config.js`.
 
 4. Make sure FusionAuth is running, then install dependencies and start the app. The React app should automatically open in your browser at [localhost:3000](http://localhost:3000).
 
@@ -55,7 +55,7 @@ The React app does not directly communicates with FusionAuth, instead, all commu
 
 When the user clicks on `sign in`, the React app redirects to the Express server's `/login` route, which redirects to FusionAuth's `authorize` endpoint. FusionAuth renders the username/password form, authenticates the user, and redirects to the configured Redirect URI (`/oauth-redirect` on the Express server) with an Authorization Code.
 
-The Express server sends the Authorization Code (as well as its Client ID and Secret) to FusionAuth's `/token` endpoint. FusionAuth validates everything and sends back an Access Token. The Express Server saves this token in session storage and redirects back to the React client.
+The Express server sends the Authorization Code (as well as its Client Id and Secret) to FusionAuth's `/token` endpoint. FusionAuth validates everything and sends back an Access Token. The Express Server saves this token in session storage and redirects back to the React client.
 
 When the user clicks on `sign out`, the React app sends a request to the Express server's `/logout` route, which sends a request to FusionAuth's `/logout` endpoint, deletes the relevant cookie, and deletes the Access Token from session storage.
 
