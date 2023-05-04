@@ -1,5 +1,11 @@
 # FusionAuth Example: React version 2.0
 
+## No longer maintained
+
+This repository is no longer maintained. Please visit [our updated React sample application](https://github.com/fusionauth/fusionauth-example-react-guide) repo.
+
+The new example app is available under the Apache2 license here: https://github.com/fusionauth/fusionauth-example-react-guide
+
 ## About
 
 This simple example app shows how you can use FusionAuth and the Authorization Code Grant in a React app to create and register users within FusionAuth, as well as log in log out via the React Client.
