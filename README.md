@@ -1,10 +1,8 @@
+**This repo is out of date and is archived. Check out [an updated tutorial on using FusionAuth with React](https://fusionauth.io/docs/quickstarts/quickstart-javascript-react-web) or [the updated GitHub repository](https://github.com/fusionauth/fusionauth-quickstart-javascript-react-web).**
+
 # FusionAuth Example: React version 2.0
 
 ## No longer maintained
-
-This repository is no longer maintained. Please visit [our updated React sample application](https://github.com/fusionauth/fusionauth-example-react-guide) repo.
-
-The new example app is available under the Apache2 license here: https://github.com/fusionauth/fusionauth-example-react-guide
 
 ## About
 
